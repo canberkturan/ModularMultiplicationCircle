@@ -25,11 +25,19 @@ Installation for \*nix and Linux
 Usage
 - ModularMultiplicationCircle [OPTIONS]
 > -s Size of the picture as pixel value (default 1080)
+
 > -p Padding between borders and circle as pixel value (default 0)
+
 > -r Rotation of circle as degree (default 0)
+
 > -d Dot count around the circle (default 200)
+
 > -m Multiplication value (default 2)
+
 > -b Bias value (default 0)
+
 > -fg Foreground color (default "255 255 255") (ex: -fg "255 0 0")
+
 > -bg Background color (default "0 0 0") (ex: -bg "0 0 0")
+
 > -o Output file path (default output.png)
