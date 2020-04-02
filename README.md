@@ -20,8 +20,8 @@ This cli application creates a modular multiplication circle.
 git clone https://github.com/canberkturan/ModularMultiplicationCircle
 cd ModularMultiplicationCircle
 go build
-cp ModularMultiplicationCircle ~/go/bin/ (if ~/go/bin doesn't exist, create with mkdir command)
-export PATH=$PATH:$HOME/go/bin (this command is temporary, if you want to make permanent, add this command to your shell conf like .bashrc)
+cp ModularMultiplicationCircle ~/go/bin/ # (if ~/go/bin doesn't exist, create with mkdir command)
+export PATH=$PATH:$HOME/go/bin # (this command is temporary, if you want to make permanent, add this command to your shell conf like .bashrc)
 ```
 ## Usage
 - $ ModularMultiplicationCircle [OPTIONS]
