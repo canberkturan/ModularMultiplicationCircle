@@ -26,7 +26,7 @@ This cli application creates a modular multiplication circle.
 </tr>
 </table>
 
-## Installation for \*nix and Linux  
+## Installation on \*nix and GNU/Linux based systems
 ```bash
 git clone https://github.com/canberkturan/ModularMultiplicationCircle
 cd ModularMultiplicationCircle
