@@ -4,12 +4,12 @@
 This cli application creates a modular multiplication circle.
 
 ## What is Modular Multiplication Circle?
-- Choose a number to put dots around the circle.
-- Choose a number to multiply dot indexes.
-- Modulate the result of multiplications to dot count.
-- Choose a number to add bias value.
-- Add bias value to modulation results.
-- Draw lines betwees start indexes and result indexes.
+- Choose a number to put dots around the circle. (ex: 200)
+- Choose a number to multiply all dot index values. (ex: 2) -> index\*2
+- Get remainder after division of multiplication result by dot count -> (index\*2)%200 
+- Choose a number to add bias value. (ex: 0)
+- Add bias value to modulation results. -> (index\*2)%200 + 0
+- Draw lines betwees start indexes and result indexes. (lines between dots pointed index and (index\*2)%200 + 0 values.)
 - It will show what is itself.
 
 ## Example:
