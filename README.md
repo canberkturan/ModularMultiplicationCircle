@@ -1,9 +1,9 @@
----
-title: Modular Multiplication Circle
----
+
+# Modular Multiplication Circle
+
 This cli application creates a modular multiplication circle.
 
-What is Modular Multiplication Circle?
+## What is Modular Multiplication Circle?
 - Choose a number to put dots around the circle.
 - Choose a number to multiply dot indexes.
 - Modulate the result of multiplications to dot count.
@@ -12,7 +12,7 @@ What is Modular Multiplication Circle?
 - Draw lines betwees start indexes and result indexes.
 - It will show what is itself.
 
-Example:
+## Example:
 <img src="examples/mmc1.png" style="width:360px; height:auto"/>
 
 Installation for \*nix and Linux  
@@ -22,8 +22,8 @@ Installation for \*nix and Linux
 - cp ModularMultiplicationCircle ~/go/bin/ (if ~/go/bin doesn't exist, create with mkdir command)
 - export PATH=$PATH:$HOME/go/bin (this command is temporary, if you want to make permanent, add this command to your shell conf like .bashrc)
 
-Usage
-- ModularMultiplicationCircle [OPTIONS]
+## Usage
+- $ ModularMultiplicationCircle [OPTIONS]
 > -s Size of the picture as pixel value (default 1080)
 
 > -p Padding between borders and circle as pixel value (default 0)
