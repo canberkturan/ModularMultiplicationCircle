@@ -13,16 +13,17 @@ This cli application creates a modular multiplication circle.
 - It will show what is itself.
 
 ## Example:
-<tr style="width:600px">
+<tr style="width:300px">
 <td><img src="examples/mmc1.png" style="max-width:360px; height:auto"/></td>
 <td><img src="examples/mmc2.png" style="max-width:360px; height:auto"/></td>
 <td><img src="examples/mmc3.png" style="max-width:360px; height:auto"/></td>
 </tr>
-<tr style="width:600px">
+<tr style="width:300px">
 <td><img src="examples/mmc4.png" style="width:360px; height:auto"/></td>
 <td><img src="examples/mmc5.png" style="width:360px; height:auto"/></td>
 <td><img src="examples/mmc6.png" style="width:360px; height:auto"/></td>
 </tr>
+
 ## Installation for \*nix and Linux  
 ```bash
 git clone https://github.com/canberkturan/ModularMultiplicationCircle
