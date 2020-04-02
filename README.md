@@ -16,12 +16,13 @@ This cli application creates a modular multiplication circle.
 <img src="examples/mmc1.png" style="width:360px; height:auto"/>
 
 ## Installation for \*nix and Linux  
-- git clone https://github.com/canberkturan/ModularMultiplicationCircle
-- cd ModularMultiplicationCircle
-- go build
-- cp ModularMultiplicationCircle ~/go/bin/ (if ~/go/bin doesn't exist, create with mkdir command)
-- export PATH=$PATH:$HOME/go/bin (this command is temporary, if you want to make permanent, add this command to your shell conf like .bashrc)
-
+```bash
+git clone https://github.com/canberkturan/ModularMultiplicationCircle
+cd ModularMultiplicationCircle
+go build
+cp ModularMultiplicationCircle ~/go/bin/ (if ~/go/bin doesn't exist, create with mkdir command)
+export PATH=$PATH:$HOME/go/bin (this command is temporary, if you want to make permanent, add this command to your shell conf like .bashrc)
+```
 ## Usage
 - $ ModularMultiplicationCircle [OPTIONS]
 > -s Size of the picture as pixel value (default 1080)
