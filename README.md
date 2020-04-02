@@ -15,7 +15,7 @@ This cli application creates a modular multiplication circle.
 ## Example:
 <img src="examples/mmc1.png" style="width:360px; height:auto"/>
 
-Installation for \*nix and Linux  
+## Installation for \*nix and Linux  
 - git clone https://github.com/canberkturan/ModularMultiplicationCircle
 - cd ModularMultiplicationCircle
 - go build
