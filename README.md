@@ -12,7 +12,7 @@ This cli application creates a modular multiplication circle.
 - Draw lines betwees start indexes and result indexes. (lines between dots pointed index and (index\*2)%200 + 0 values.)
 - It will show what is itself.
 
-## Example:
+## Examples:
 <table style="width:100%">
 <tr>
 <td><img src="examples/mmc1.png" style="width:auto; height:auto"/></td>
