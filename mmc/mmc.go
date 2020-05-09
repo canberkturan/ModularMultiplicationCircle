@@ -18,19 +18,28 @@ type MMC struct {
 	rot float64
 }
 
-func (mmc *MMC) Init(size, pad int, rot float64, bg, fg color.RGBA){
-	mmc.size=size
-	mmc.pad=pad
-	mmc.rot=rot*(math.Pi/180)
-	mmc.bg=bg
-	mmc.fg=fg
-	mmc.img=image.NewRGBA(image.Rect(0,0,size,size))
-	for i:=0; i<size; i++ {
-		for j:=0; j<size; j++ {
-			mmc.img.Set(i,j,bg)
-		}
-	}
-	mmc.DrawCircle()
+func (mmc *MMC) Init(size, pad int, rot float64, bg, fg color.RGBA) (int){
+        if (size<=0){
+                fmt.Printf("Size value must be greater than zero.(%d given)\n",size)
+                return -1
+        }
+        if (pad < 0 || pad > size/2){
+                fmt.Printf("Padding value must be between 0 and half of the size.(%d given,size=%d) (Boundary values are valid too)\n", pad, size)
+                return -1
+        }
+        mmc.size=size
+        mmc.pad=pad
+        mmc.rot=rot*(math.Pi/180)
+        mmc.bg=bg
+        mmc.fg=fg
+        mmc.img=image.NewRGBA(image.Rect(0,0,size,size))
+        for i:=0; i<size; i++ {
+                for j:=0; j<size; j++ {
+                        mmc.img.Set(i,j,bg)
+                }
+        }
+        mmc.DrawCircle()
+        return 1
 }
 
 func (mmc *MMC) Create(dotcount, multiplier, bias float64){

@@ -62,7 +62,8 @@ func main(){
 		bg.rgba = color.RGBA{0,0,0,255}
 	}
 
-	mmc.Init(*size,*pad,*rot,bg.rgba,fg.rgba)
+	return_code := mmc.Init(*size,*pad,*rot,bg.rgba,fg.rgba)
+	if ( return_code == -1 ){ os.Exit(2) }
 	mmc.Create(*dot,*mult,*bias)
 	mmc.Save(*out)
 }
