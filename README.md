@@ -30,12 +30,11 @@ This cli application creates a modular multiplication circle.
 ```bash
 git clone https://github.com/canberkturan/ModularMultiplicationCircle
 cd ModularMultiplicationCircle
-go build
-cp ModularMultiplicationCircle ~/go/bin/ # (if ~/go/bin doesn't exist, create with mkdir command)
-export PATH=$PATH:$HOME/go/bin # (this command is temporary, if you want to make permanent, add this command to your shell conf like .bashrc)
+make
+sudo make install
 ```
 ## Usage
-- $ ModularMultiplicationCircle [OPTIONS]
+- $ modmulcircle [OPTIONS]
 > -s Size of the picture as pixel value (default 1080)
 
 > -p Padding between borders and circle as pixel value (default 0)
