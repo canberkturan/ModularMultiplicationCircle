@@ -19,7 +19,7 @@ type MMC struct {
 	rot  float64
 }
 
-// Initialize the attributes of MMC struct
+// Init attributes of MMC struct
 func (mmc *MMC) Init(size, pad int, rot float64, bg, fg color.RGBA) int {
 	if size <= 0 {
 		fmt.Printf("Size value must be greater than zero.(%d given)\n", size)
@@ -44,7 +44,7 @@ func (mmc *MMC) Init(size, pad int, rot float64, bg, fg color.RGBA) int {
 	return 1
 }
 
-// Call Drawline method for every dot with wanted values
+// Create method calls Drawline method for every dot around the circle with wanted values
 func (mmc *MMC) Create(dotcount, multiplier, bias float64) {
 	center := float64(mmc.size) / 2
 	radius := center - float64(mmc.pad)
@@ -59,7 +59,7 @@ func (mmc *MMC) Create(dotcount, multiplier, bias float64) {
 	}
 }
 
-// Draw the circle
+// DrawCircle does exactly what its name says
 func (mmc *MMC) DrawCircle() {
 	da := 1 / float64(mmc.size)
 	center := float64(mmc.size) / 2
@@ -71,7 +71,7 @@ func (mmc *MMC) DrawCircle() {
 	}
 }
 
-// Draw a line between two dots around the circle
+// Drawline method draws a line between two dots around the circle
 func (mmc *MMC) Drawline(x0, y0, x1, y1 int) {
 	dx := math.Abs(float64(x1 - x0))
 	dy := -math.Abs(float64(y1 - y0))
@@ -95,7 +95,7 @@ func (mmc *MMC) Drawline(x0, y0, x1, y1 int) {
 	}
 }
 
-// Encoode and save the image
+// Save the image
 func (mmc *MMC) Save(path string) {
 	file, err := os.Create(path)
 	if err != nil {
