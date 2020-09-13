@@ -49,7 +49,7 @@ func (mmc *MMC) Create(dotcount, multiplier, bias float64) {
 	center := float64(mmc.size) / 2
 	radius := center - float64(mmc.pad)
 	angle := (2 * math.Pi) / dotcount
-	for i := float64(0); i < dotcount; i += 1 {
+	for i := float64(0); i < dotcount; i++ {
 		to := math.Mod(i*multiplier+bias, dotcount)
 		x0 := int(center + radius*math.Cos(angle*i+mmc.rot))
 		y0 := int(center + radius*math.Sin(angle*i+mmc.rot))
