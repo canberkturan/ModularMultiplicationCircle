@@ -10,6 +10,7 @@ import (
 	"strings"
 )
 
+// ColorValue has an attribute that shows if rgba values are default or not
 type ColorValue struct {
 	rgba  color.RGBA
 	isSet bool
@@ -19,6 +20,7 @@ func (v *ColorValue) String() string {
 	return string(v.rgba.R) + "," + string(v.rgba.G) + "," + string(v.rgba.B)
 }
 
+// Set rgb or rgba values with string value
 func (v *ColorValue) Set(s string) error {
 	parsed := strings.Split(s, " ")
 	var rgb [3]uint8
@@ -63,8 +65,8 @@ func main() {
 		bg.rgba = color.RGBA{0, 0, 0, 255}
 	}
 
-	return_code := mmc.Init(*size, *pad, *rot, bg.rgba, fg.rgba)
-	if return_code == -1 {
+	returnCode := mmc.Init(*size, *pad, *rot, bg.rgba, fg.rgba)
+	if returnCode == -1 {
 		os.Exit(2)
 	}
 	mmc.Create(*dot, *mult, *bias)
