@@ -1,3 +1,4 @@
+[![Go Report Card](https://goreportcard.com/badge/github.com/canberkturan/ModularMultiplicationCircle)](https://goreportcard.com/report/github.com/canberkturan/ModularMultiplicationCircle)
 
 # Modular Multiplication Circle
 
