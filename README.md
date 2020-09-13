@@ -5,13 +5,13 @@
 This cli application creates a modular multiplication circle.
 
 ## What is Modular Multiplication Circle
-  - Choose a number to put dots around the circle. (ex: 200)
-  - Choose a number to multiply all dot index values. (ex: 2) -> index\*2
-  - Get remainder after division of multiplication result by dot count -> (index\*2)%200 
-  - Choose a number to add bias value. (ex: 0)
-  - Add bias value to modulation results. -> (index\*2)%200 + 0
-  - Draw lines betwees start indexes and result indexes. (lines between dots pointed index and (index\*2)%200 + 0 values.)
-  - It will show what is itself.
+- Choose a number to put dots around the circle. (ex: 200)
+- Choose a number to multiply all dot index values. (ex: 2) -> index\*2
+- Get remainder after division of multiplication result by dot count -> (index\*2)%200 
+- Choose a number to add bias value. (ex: 0)
+- Add bias value to modulation results. -> (index\*2)%200 + 0
+- Draw lines betwees start indexes and result indexes. (lines between dots pointed index and (index\*2)%200 + 0 values.)
+- It will show what is itself.
 
 ## Examples
 <table style="width:100%">
@@ -35,7 +35,7 @@ make
 sudo make install
 ```
 ## Usage
-  - $ modmulcircle \[OPTIONS]
+- $ modmulcircle \[OPTIONS]
     > -s Size of the picture as pixel value (default 1080)
 
     > -p Padding between borders and circle as pixel value (default 0)
