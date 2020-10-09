@@ -22,13 +22,13 @@ func (v *ColorValue) String() string {
 
 // Set rgb or rgba values with string value
 func (v *ColorValue) Set(s string) error {
+	rgb := []uint8{ 0, 0, 0, 255 }
 	parsed := strings.Split(s, " ")
-	var rgb [3]uint8
-	if len(parsed) != 3 {
-		fmt.Println("Please enter 3 values for color paramethers")
+	if len(parsed) != 3 && len(parsed) != 4 {
+		fmt.Println("Please enter 3 or 4 values for color paramethers")
 		os.Exit(2)
 	} else {
-		for i := 0; i < 3; i++ {
+		for i := 0; i < len(parsed); i++ {
 			val, err := strconv.Atoi(parsed[i])
 			if err != nil {
 				fmt.Println(err)
@@ -37,7 +37,7 @@ func (v *ColorValue) Set(s string) error {
 				rgb[i] = uint8(val)
 			}
 		}
-		v.rgba = color.RGBA{rgb[0], rgb[1], rgb[2], 255}
+		v.rgba = color.RGBA{rgb[0], rgb[1], rgb[2], rgb[3}
 		v.isSet = true
 	}
 	return nil
