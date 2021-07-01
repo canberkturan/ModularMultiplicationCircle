@@ -37,7 +37,7 @@ func (v *ColorValue) Set(s string) error {
 				rgb[i] = uint8(val)
 			}
 		}
-		v.rgba = color.RGBA{rgb[0], rgb[1], rgb[2], rgb[3}
+		v.rgba = color.RGBA{rgb[0], rgb[1], rgb[2], rgb[3]}
 		v.isSet = true
 	}
 	return nil
