@@ -1,7 +1,7 @@
-GOBIN = /usr/bin/go build
+GOBIN=`which go`
 EXEC=modmulcircle
 $(EXEC):
-	$(GOBIN) -o $(EXEC)
+	$(GOBIN) get && $(GOBIN) build -o $(EXEC)
 clean:
 	rm -v $(EXEC)
 install:

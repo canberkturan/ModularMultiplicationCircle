@@ -1,7 +1,7 @@
 package main
 
 import (
-	"./mmc"
+	"github.com/canberkturan/ModularMultiplicationCircle/mmc"
 	"flag"
 	"fmt"
 	"image/color"
