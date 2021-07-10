@@ -33,9 +33,11 @@ This cli application creates a modular multiplication circle.
 <td><img src="examples/mmc6.png" style="width:auto; height:auto"/></td>
 </tr>
 </table>
+
 ## Dependencies
 - GoLang
 - Network Connection
+
 ## Installation on \*nix and GNU/Linux based systems
 ```bash
 git clone https://github.com/canberkturan/ModularMultiplicationCircle
